@@ -31,7 +31,6 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 transform.Translate(Vector3.forward * Time.deltaTime * speed);
-
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 PlayerAnimation.SetBool("isMove", true);
             }
